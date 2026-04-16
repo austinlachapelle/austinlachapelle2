@@ -33,9 +33,18 @@
 
     html {
       scroll-behavior: smooth;
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+      overscroll-behavior-x: none;
     }
 
     body {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+      position: relative;
+      touch-action: pan-y;
       background:
         radial-gradient(circle at 12% 18%, rgba(255, 111, 174, 0.18), transparent 15%),
         radial-gradient(circle at 82% 26%, rgba(86, 212, 255, 0.18), transparent 16%),
@@ -52,6 +61,7 @@
 
     .shell {
       width: min(var(--max), calc(100% - 32px));
+      max-width: 100%;
       margin: 0 auto;
     }
 
